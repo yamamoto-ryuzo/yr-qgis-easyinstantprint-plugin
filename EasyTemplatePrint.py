@@ -46,7 +46,6 @@ class EasyTemplatePrint(QObject):
 
         self.iface = iface
         self.pluginDir = os.path.dirname(__file__)
-        self.tool = InstantPrintTool(self.iface)
 
         # Localize
         locale = QSettings().value("locale/userLocale")[0:2]
@@ -56,6 +55,8 @@ class EasyTemplatePrint(QObject):
             self.translator = QTranslator()
             self.translator.load(localePath)
             QCoreApplication.installTranslator(self.translator)
+
+        self.tool = InstantPrintTool(self.iface)
 
     def initGui(self):
         self.toolButton = QToolButton(self.iface.mapNavToolToolBar())
