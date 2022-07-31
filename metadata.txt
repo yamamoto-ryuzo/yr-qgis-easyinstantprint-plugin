@@ -3,34 +3,28 @@
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
-name=Easy Template Print
+name=Yr Easy Instant Print
 qgisMinimumVersion=3.0
 description=This plugin makes it easy to print using templates and text 
-version=2.4
-author=Jesper Jøker Eg - GISkonsulenten
-email=jesper@giskonsulenten.dk
+version=2.4 +
+author=Yamamoto Ryuzo
+email=ryu@yamakun.net
 
 
 about=This plugin makes it easy to fill text items in print templates and place/rotate plot.
 
-tracker=https://github.com/giskonsulenten/EasyTemplatePrint/issues
-repository=https://github.com/giskonsulenten/EasyTemplatePrint-for-Qgis3
+tracker=https://github.com/yamamoto-ryuzo/yr-qgis-easyinstantprint-plugin
+repository=https://github.com/yamamoto-ryuzo/yr-qgis-easyinstantprint-plugin
 # End of mandatory metadata
 
 # Recommended items:
 
 hasProcessingProvider=no
-# Uncomment the following line and add your changelog:
-# changelog= 23-03-2020: Added feature to open export-file directly from plugin
-# changelog= 27-05-2020: Added legend-handling 
-# changelog= 05-02-2021: Fixed rounding issue on scale and added possibylity to enter canvas scale 
-# changelog= 07-09-2021: Added feature to print along line
-
 
 # Tags are comma separated with spaces allowed
 tags=python, qgis, print, templates
 
-homepage=http://www.giskonsulenten.dk/wp-content/uploads/2018/02/documentation.pdf
+homepage=https://github.com/yamamoto-ryuzo/yr-qgis-easyinstantprint-plugin
 category=Plugins
 icon=icon.png
 # experimental flag
@@ -49,4 +43,3 @@ Category of the plugin: Raster, Vector, Database or Web
 
 # If the plugin can run on QGIS Server.
 server=False
-
