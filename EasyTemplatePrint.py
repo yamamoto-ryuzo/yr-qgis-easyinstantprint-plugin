@@ -38,7 +38,7 @@ import os, sys
 # Import the code for the dialog
 from .EasyTemplatePrint_dialog import EasyTemplatePrintDialog
 from .InstantPrintTool import InstantPrintTool
-from . import resources
+#from . import resources
 
 class EasyTemplatePrint(QObject):
     def __init__(self, iface):
@@ -60,7 +60,7 @@ class EasyTemplatePrint(QObject):
 
     def initGui(self):
         self.toolButton = QToolButton(self.iface.mapNavToolToolBar())
-        self.toolButton.setIcon(QIcon(":/plugins/EasyTemplatePrint/icon.png"))
+        self.toolButton.setIcon(QIcon(os.path.dirname(__file__) +"/icon.png"))
         self.toolButton.setText(self.tr("EasyTemplatePrint"))
         self.toolButton.setToolTip(self.tr("EasyTemplatePrint"))
         self.toolButton.setCheckable(True)
